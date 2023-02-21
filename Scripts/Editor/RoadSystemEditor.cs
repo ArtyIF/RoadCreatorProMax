@@ -517,7 +517,7 @@ namespace RoadCreatorPro
             Ray mouseRay = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
             RaycastHit raycastHit;
 
-            if (Physics.Raycast(mouseRay, out raycastHit, 1000, 1 << LayerMask.NameToLayer("Intersection") | 1 << LayerMask.NameToLayer("Road")))
+            if (Physics.Raycast(mouseRay, out raycastHit, SceneView.currentDrawingSceneView ? SceneView.currentDrawingSceneView.camera.farClipPlane : 1000, 1 << LayerMask.NameToLayer("Intersection") | 1 << LayerMask.NameToLayer("Road")))
             {
                 // Get road or intersection object
                 Transform parent = raycastHit.transform;
