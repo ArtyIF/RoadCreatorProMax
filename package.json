@@ -1,0 +1,21 @@
+{
+    "name": "com.artyif.roadcreatorpromax",
+    "version": "0.4.1",
+    "displayName": "Road Creator Pro Max",
+    "description": "A flexible road creation package for Unity based on MCrafterzz/MarcusElg's now-undeveloped Road Creator Pro.",
+    "unity": "2021.3",
+    "unityRelease": "0f1",
+    "documentationUrl": "https://mcrafterzz.itch.io/road-creator-pro",
+    "changelogUrl": "https://github.com/ArtyIF/RoadCreatorProMax/releases",
+    "licensesUrl": "https://github.com/ArtyIF/RoadCreatorProMax/LICENSE.md",
+    "keywords": [
+        "level-design",
+        "procedural-generation",
+        "terrain"
+    ],
+    "author": {
+        "name": "ArtyIF (originally MCrafterzz/MarcusElg)",
+        "email": "artyomisflash@mail.ru",
+        "url": "https://github.com/ArtyIF"
+    }
+}
