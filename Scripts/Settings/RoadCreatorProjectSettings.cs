@@ -35,7 +35,7 @@ namespace RoadCreatorPro
                         settings.FindProperty("controlPointSize").floatValue = 1.5f;
                         settings.FindProperty("selectedObjectArrowSize").floatValue = 4.5f;
                         settings.FindProperty("pointShape").enumValueIndex = (int)RoadCreatorSettings.PointShape.Cylinder;
-                        settings.FindProperty("scalePointsWhenZoomed").boolValue = false;
+                        settings.FindProperty("scalePointsWhenZoomed").boolValue = true;
                         settings.FindProperty("exposeCurveKeysToEditor").boolValue = true;
                         settings.FindProperty("prefabExportLocation").stringValue = "Assets/";
                         settings.FindProperty("roadOptionsIconSize").intValue = 40;

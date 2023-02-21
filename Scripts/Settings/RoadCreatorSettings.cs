@@ -14,7 +14,7 @@ namespace RoadCreatorPro
         public float selectedObjectArrowSize = 4.5f;
         public enum PointShape { Cylinder, Sphere, Cube, Cone };
         public PointShape pointShape;
-        public bool scalePointsWhenZoomed = false;
+        public bool scalePointsWhenZoomed = true;
         public bool exposeCurveKeysToEditor = true;
         public string prefabExportLocation = "Assets/";
         public int roadOptionsIconSize = 40;

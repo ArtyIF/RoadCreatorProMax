@@ -11,6 +11,7 @@ I am not good at Unity's tool development, so I need some help with this.
   - [ ] First time I started this project, icons didn't appear on buttons and I had to rely on tooltips
   - [ ] Adding points to existing roads is unintutitive, you have to select the point you want to add points to. While later it's become clear why it's done like that (to make it easier to add intersections), it's not communicated properly
   - [ ] Intersections don't work the way they're advertised in the promo video on itch.io in 2.x, and it's really cumbersome
+  - [ ] Redo icons so they don't look as ugly
 - [ ] Fix bugs
   - [ ] Curved roads behave weirdly compared to alternative tools like [EasyRoads3D](https://assetstore.unity.com/packages/tools/terrain/easyroads3d-pro-v3-469) and [Road Architect](https://github.com/FritzsHero/RoadArchitect), getting all wobbly when adding points in a straight line
   - [ ] Intersections glitch out when first connected (fixes itself as more points as added)
