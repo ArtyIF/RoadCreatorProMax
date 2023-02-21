@@ -57,7 +57,10 @@ namespace RoadCreatorPro
 
             if (area != null)
             {
-                GetCurrentPointIndex(area);
+                if (currentEvent.type == EventType.MouseDown && currentEvent.button == 0)
+                {
+                    GetCurrentPointIndex(area);
+                }
 
                 if (currentEvent.type == EventType.Layout)
                 {

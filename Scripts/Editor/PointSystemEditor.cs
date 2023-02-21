@@ -37,7 +37,10 @@ namespace RoadCreatorPro
 
             if (prefabLine == null || !prefabLine.controlled)
             {
-                GetCurrentPointIndex(pointSystem);
+                if (currentEvent.type == EventType.MouseDown && currentEvent.button == 0)
+                {
+                    GetCurrentPointIndex(pointSystem);
+                }
 
                 if (currentEvent.type == EventType.Layout)
                 {
@@ -419,8 +422,7 @@ namespace RoadCreatorPro
                     handleRotation = Quaternion.identity;
                 }
 
-                // Don't draw first point for cyclic road
-                if (lastPointIndex == i * 3 && currentMovingPointIndex == -1 && (pointSystem.transform.GetChild(0).childCount <= 3 || i > 0))
+                if (lastPointIndex == i * 3 && currentMovingPointIndex == -1)
                 {
                     Undo.RecordObject(point, "Move Point");
                     EditorGUI.BeginChangeCheck();

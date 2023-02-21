@@ -57,7 +57,7 @@ namespace RoadCreatorPro
             // Render
             if (currentPoint == null)
             {
-                GUILayout.Label("Hover over a road, prefab line or prohibited area point to be able to edit it", EditorStyles.wordWrappedLabel);
+                GUILayout.Label("Click on a road, prefab line or prohibited area point to edit it", EditorStyles.wordWrappedLabel);
             }
             else
             {

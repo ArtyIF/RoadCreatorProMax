@@ -80,7 +80,10 @@ namespace RoadCreatorPro
 
             foreach (RoadCreator road in roadSystem.roads)
             {
-                GetCurrentPointIndex(road);
+                if (currentEvent.type == EventType.MouseDown && currentEvent.button == 0)
+                {
+                    GetCurrentPointIndex(road);
+                }
             }
 
             if (currentEvent.type == EventType.Layout)
