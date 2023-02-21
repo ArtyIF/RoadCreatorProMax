@@ -57,16 +57,11 @@ namespace RoadCreatorPro
 
         public static RoadCreatorSettings GetOrCreateSettings()
         {
-            RoadCreatorSettings settings = AssetDatabase.LoadAssetAtPath<RoadCreatorSettings>("Assets/Editor/RoadCreatorSettings.asset");
+            RoadCreatorSettings settings = AssetDatabase.LoadAssetAtPath<RoadCreatorSettings>("Assets/RoadCreatorSettings.asset");
             if (settings == null)
             {
-                if (Directory.Exists("Assets/Editor") == false)
-                {
-                    Directory.CreateDirectory("Assets/Editor");
-                }
-
                 settings = ScriptableObject.CreateInstance<RoadCreatorSettings>();
-                AssetDatabase.CreateAsset(settings, "Assets/Editor/RoadCreatorSettings.asset");
+                AssetDatabase.CreateAsset(settings, "Assets/RoadCreatorSettings.asset");
                 AssetDatabase.SaveAssets();
             }
 
