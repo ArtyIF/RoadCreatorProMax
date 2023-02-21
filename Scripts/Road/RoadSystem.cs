@@ -22,6 +22,10 @@ namespace RoadCreatorPro
 
         public void ClearAction()
         {
+            if (currentlyCreatedRoad) // currentlyCreatedRoad means it only has one point so far. Once there's more points, the editor goes into Add Points mode
+            {
+                DestroyImmediate(currentlyCreatedRoad.gameObject);
+            }
             currentlyCreatedIntersectionPoints.Clear();
             intersectionConnectionPoint = null;
             currentlyCreatedRoad = null;

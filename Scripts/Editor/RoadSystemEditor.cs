@@ -253,12 +253,6 @@ namespace RoadCreatorPro
                         }
                     }
                 }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
-                    roadSystem.currentlyCreatedIntersectionPoints.Clear();
-                }
             }
         }
 
@@ -293,12 +287,6 @@ namespace RoadCreatorPro
                         }
                     }
                 }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
-                    roadSystem.intersectionConnectionPoint = null;
-                }
             }
         }
 
@@ -316,11 +304,6 @@ namespace RoadCreatorPro
                         roadSystem.lastPointRoad.DisconnectFromIntersection(point);
                         GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
                     }
-                }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
                 }
             }
         }
@@ -342,11 +325,6 @@ namespace RoadCreatorPro
 
                         GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
                     }
-                }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
                 }
             }
         }
@@ -411,18 +389,6 @@ namespace RoadCreatorPro
                         roadSystem.currentlyCreatedRoad = null;
                     }
                 }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
-
-                    if (roadSystem.currentlyCreatedRoad != null)
-                    {
-                        DestroyImmediate(roadSystem.currentlyCreatedRoad.gameObject);
-                    }
-
-                    roadSystem.currentlyCreatedRoad = null;
-                }
             }
         }
 
@@ -483,12 +449,6 @@ namespace RoadCreatorPro
                         }
                     }
                 }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
-                    roadSystem.addedPoint = null;
-                }
             }
         }
 
@@ -527,12 +487,6 @@ namespace RoadCreatorPro
                         closestRoad.Regenerate();
                     }
                 }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
-                    roadSystem.addedPoint = null;
-                }
             }
         }
 
@@ -554,11 +508,6 @@ namespace RoadCreatorPro
                         // Delete road incase it's now null
                         roadSystem.roads.RemoveWhere(item => item == null);
                     }
-                }
-                else if (currentEvent.button == 1)
-                {
-                    // Right click
-                    GlobalRoadSystemSettings.currentAction = GlobalRoadSystemSettings.Action.None;
                 }
             }
         }

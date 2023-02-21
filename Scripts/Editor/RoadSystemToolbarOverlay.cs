@@ -61,8 +61,15 @@ namespace RoadCreatorPro
         {
             if (GUILayout.Button(content, GUILayout.Width(iconSize), GUILayout.Height(iconSize)))
             {
-                ClearAction();
-                GlobalRoadSystemSettings.currentAction = action;
+                if (GlobalRoadSystemSettings.currentAction == action)
+                {
+                    ClearAction();
+                }
+                else
+                {
+                    ClearAction();
+                    GlobalRoadSystemSettings.currentAction = action;
+                }
             }
         }
 
